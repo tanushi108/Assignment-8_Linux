@@ -240,20 +240,6 @@ flowchart LR
 
 Rebase is used to replay commits from one branch on top of another branch.
 
-### 🔄 Rebase Diagram
-
-```mermaid
-gitGraph
-   commit id: "Initial"
-   branch ninja
-   checkout main
-   commit id: "Main Changes"
-   checkout ninja
-   commit id: "Ninja Changes"
-```
-
-After rebasing:
-
 ```bash
 git checkout ninja
 git rebase main
@@ -402,6 +388,8 @@ The `gitTags.sh` script manages Git tags.
 ```bash
 ./gitTags.sh -t ninja_1.1
 ```
+<img width="660" height="117" alt="image" src="https://github.com/user-attachments/assets/f19b173d-e1af-49d9-b7e2-7f153b400916" />
+
 
 ---
 
@@ -417,6 +405,7 @@ Output:
 ninja_1.0
 ninja_1.1
 ```
+<img width="569" height="91" alt="image" src="https://github.com/user-attachments/assets/7335336e-9087-4a60-af1d-07bfb415a80d" />
 
 ---
 
@@ -426,17 +415,7 @@ ninja_1.1
 ./gitTags.sh -d ninja_1.0
 ```
 
-### 📊 Git Tag Diagram
-
-```mermaid
-gitGraph
-   commit id: "Commit 1"
-   commit id: "Commit 2" tag: "ninja_1.0"
-   commit id: "Commit 3"
-   commit id: "Commit 4" tag: "ninja_1.1"
-```
-
-Tags are commonly used to identify important versions or releases of a project.
+<img width="635" height="112" alt="image" src="https://github.com/user-attachments/assets/f200c0e9-0422-406e-97af-e696a07581d6" />
 
 ---
 
