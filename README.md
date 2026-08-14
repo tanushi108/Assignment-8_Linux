@@ -39,7 +39,7 @@ The objective of this assignment is to understand and implement important **Git 
  └── 📘 README.md
 ```
 
-<img width="609" height="238" alt="image" src="https://github.com/user-attachments/assets/ff04791f-3553-4d12-b58f-39bfce3d4e34" />
+<img width="578" height="244" alt="image" src="https://github.com/user-attachments/assets/13ece740-2246-4f1e-bbfc-9802cc733059" />
 
 ---
 
