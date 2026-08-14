@@ -6,10 +6,6 @@
   <img src="https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github" alt="GitHub">
 </p>
 
-<p align="center">
-  <b>Author: Tanushi Rana</b>
-</p>
-
 ---
 
 ## 📌 Objective
@@ -438,22 +434,19 @@ The report contains:
 
 | Field             | Description                    |
 | ----------------- | ------------------------------ |
-| 🆔 Commit ID      | Unique commit identifier       |
+| 📅 Commit Date    | Date and time when the commit was created      |
 | 👤 Author Name    | Name of commit author          |
 | 📧 Author Email   | Author email address           |
 | 💬 Commit Message | Commit description             |
-| 📁 Changed Files  | Files modified by commit       |
-| ✅ Valid           | JIRA commit message validation |
 
 ---
 
 ## ▶️ Usage
 
 ```bash
-./gitCommitReport.sh \
--u https://github.com/opstree/spring3hibernate.git \
--d 40
+./gitCommitReport.sh -u https://github.com/tanushi108/Assignment-1.1_Linux.git -d 40
 ```
+<img width="1343" height="259" alt="image" src="https://github.com/user-attachments/assets/70a407b4-2e8b-47c7-8dd7-c825c4706406" />
 
 ---
 
@@ -464,59 +457,14 @@ flowchart TD
     A["🌐 Repository URL"] --> B["📥 Clone Repository"]
     B --> C["📅 Calculate Date Range"]
     C --> D["🔍 Git Log"]
-    D --> E["🆔 Commit ID"]
-    D --> F["👤 Author"]
-    D --> G["📧 Email"]
+    D --> E["📅 Commit Date"]
+    D --> F["👤 Author Name"]
+    D --> G["📧 Author Email"]
     D --> H["💬 Commit Message"]
-    D --> I["📁 Changed Files"]
-    E --> J["📊 Generate CSV Report"]
-    F --> J
-    G --> J
-    H --> J
-    I --> J
-```
-
----
-
-# ✅ Optional — JIRA Commit Validation
-
-A commit is considered valid when its message starts with:
-
-```text
-JIRA-XXXX:
-```
-
-### ✅ Valid Example
-
-```text
-JIRA-1234: Fix login issue
-```
-
-Result:
-
-```text
-Valid = Yes
-```
-
-### ❌ Invalid Example
-
-```text
-Fix login issue
-```
-
-Result:
-
-```text
-Valid = No
-```
-
-### 📊 Validation Flow
-
-```mermaid
-flowchart LR
-    A["💬 Commit Message"] --> B{"Starts with JIRA-XXXX:?"}
-    B -->|Yes| C["✅ Valid"]
-    B -->|No| D["❌ Invalid"]
+    E --> I["📄 Generate Commit Report"]
+    F --> I
+    G --> I
+    H --> I
 ```
 
 ---
