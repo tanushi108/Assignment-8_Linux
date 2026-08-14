@@ -29,15 +29,17 @@ The objective of this assignment is to understand and implement important **Git 
 # 📂 Project Structure
 
 ```text
-Assignment-8_Linux/
-└── 📁 ninja/
-      └── 📄 README.md
-└──📜 gitBranches.sh
-└──📜 gitTags.sh
-└──📜 gitCommitReport.sh
-
-└── 📄 README.md
+📦 Assignment-8_Linux
+ ├── 📁 ninja
+ │    └── 📄 README.md
+ │
+ ├── 📜 gitBranches.sh
+ ├── 📜 gitTags.sh
+ ├── 📜 gitCommitReport.sh
+ └── 📘 README.md
 ```
+
+<img width="578" height="244" alt="image" src="https://github.com/user-attachments/assets/13ece740-2246-4f1e-bbfc-9802cc733059" />
 
 ---
 
@@ -501,7 +503,7 @@ Before submitting the assignment, verify the scripts.
 # 📁 Final Repository Structure
 
 ```text
-📦 New-Repo
+📦 Assignment-8_Linux
  ├── 📁 ninja
  │    └── 📄 README.md
  │
